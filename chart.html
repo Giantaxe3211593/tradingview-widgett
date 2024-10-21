@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Widget</title>
+</head>
+<body>
+    <div id="tradingview_widget"></div>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+      new TradingView.widget({
+        "container_id": "tradingview_widget",
+        "autosize": true,
+        "symbol": "CME_MINI:NQ1!",   // E-mini Nasdaq 100 futures
+        "interval": "1",             // 1-minute chart
+        "timezone": "Etc/GMT+4",     // UTC-4 timezone
+        "theme": "dark",             // Dark mode
+        "style": "1",
+        "locale": "en",
+        "allow_symbol_change": false, // Prevent symbol change
+        "hide_top_toolbar": true,     // Hides toolbar
+        "save_image": false,          // Disables saving
+        "hideideas": true,            // Hides public ideas
+        "studies": [],                // No extra studies
+        "enable_publishing": false,   // Prevents publishing
+        "hide_side_toolbar": false    // Allows scrolling and price-checking
+      });
+    </script>
+</body>
+</html>
